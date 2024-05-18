@@ -1,0 +1,76 @@
+Sum of Odd Numbers
+a=int(input())
+n=0
+for i in range(1,a+1):
+    if(i%2!=0):
+        n=n+i
+print(n)
+
+Infinite sum
+a=0
+s=0
+while(a!=-1):
+    a=int(input())
+    s=s+a
+print(s+1)
+
+Minimum out of 10 numbers
+a=[]
+for i in range(1,10):
+    b=int(input())
+    a.append(b)
+c=min(a)
+print("Thank you!",c,"is the smallest number.")
+
+Sum & Mean
+a=input()
+add=0
+b=[]
+i=0
+count=0
+c=a.split()
+while(c[i]!="-1"):
+    d=int(c[i])
+    add=add+d
+    count=count+1
+    i=i+1
+m=add/count
+print("Sum of the given",count,"numbers is :",add)
+print("Mean of the given",count,"numbers is :","{:.2f}".format(m))
+
+Problem 19: Prime or not
+a=int(input())
+c=0
+for i in range(1,a+1):
+    if(a%i==0):
+        c=c+1
+if(c==2):
+    print("Prime number")
+else:
+    print("Not a Prime number")
+    
+Get 15 leap years
+a=int(input())
+c=0
+d=[]
+if((a%400==0)or(a%4==0 and a%100!=0)):
+    r=1
+else:
+    r=0 
+if(r==0):
+    while(r!=1):
+        a=a+1
+        if((a%400==0)or(a%4==0 and a%100!=0)):
+            r=1
+if(r==1):
+    while(c!=15):
+        if((a%400==0)or(a%4==0 and a%100!=0)):
+            d.append(a)
+            c=c+1
+        a=a+4
+e=[]
+for i in range(len(d)):
+    e.append(str(d[i]))
+print(", ".join(e))
+
+    
