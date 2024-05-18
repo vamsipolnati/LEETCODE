@@ -1,0 +1,121 @@
+AddMe
+a=int(input())
+b=int(input())
+c=a+b
+print(c)
+
+Even / Odd
+a=int(input())
+if(a%2==0):
+    print("Even")
+else:
+    print("Odd")
+
+Bigger or Smaller or Equal
+a=int(input())
+b=int(input())
+if(a>b):
+    print("Big")
+elif(b>a):
+    print("Small")
+else:
+    print("Equal")
+
+    
+Product of three positive numbers
+a=int(input())
+b=int(input())
+c=int(input())
+if(a==7):
+    print(b*c)
+elif(b==7):
+    print(c)
+elif(c==7):
+    print("-1")
+else:
+    print(a*b*c)
+
+Find Change
+a=int(input())
+b=int(input())
+c=int(input())
+d=c//5
+e=c%5
+if(d<=b and e<=a):
+    print(e)
+    print(d)
+elif(d<=b and e>a):
+    print("-1")
+elif(d>b):
+    f=(d-b)*5
+    e=e+f
+    if(e<=a):
+        print(e)
+        print(b)
+    else:
+        print("-1")
+else:
+    print("-1")
+
+    Salary Hike Simple
+    a=int(input())
+b=int(input())
+if(b==3):
+    c=(15*a)/100
+    print(int(c+a))
+elif(b==4):
+    c=(7*a)/100
+    print(int(c+a))
+else:
+    c=(5*a)/100
+    print(int(c+a))
+
+    Assignment 18 Infytq
+    a=int(input())
+b=input()
+if(b=="Euro"):
+    c=a*(0.01417)
+    print(c)
+elif(b=="British Pound"):
+    c=a*(0.0100)
+    print(c)
+elif(b=="Australian Dollar"):
+    c=a*(0.02140)
+    print(c)
+elif(b=="Canadian Dollar"):
+    c=a*(0.02027)
+    print(c)
+else:
+    print("Invalid currency name")
+Assignment 19 Infytq
+a=input()
+b=int(input())
+c=int(input())
+if(a=="V" and b>=1 and c>0):
+    d=120*b
+    if(c>3 and c<=6):
+        e=3*(c-3)
+        d=d+e
+    elif(c>6):
+        e1=c-3
+        e2=e1-3
+        e3=e2*6
+        e4=3*(e1-e2)
+        d=d+e4+e3
+elif(a=="N" and b>=1 and c>0):
+    d=150*b
+    if(c>3 and c<=6):
+        e=3*(c-3)
+        d=d+e
+    elif(c>6):
+        e1=c-3
+        e2=e1-3
+        e3=e2*6
+        e4=3*(e1-e2)
+        d=d+e4+e3
+else:
+    d=-1
+print(d)
+        
+    
+    
